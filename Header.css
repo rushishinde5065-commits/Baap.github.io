@@ -1,0 +1,32 @@
+.og {
+    font-size: 19px;
+    margin-right: auto;
+    padding-left: 35px;
+    padding-left: auto;
+
+}
+
+.pg {
+    padding-right: 10px;
+}
+
+.bp {
+    position: absolute;
+    right: 70px;
+    top: 36px;
+}
+
+.sp {
+    background-color: black;
+}
+
+Link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+Link:hover {
+    color: rgb(189, 0, 0);
+}

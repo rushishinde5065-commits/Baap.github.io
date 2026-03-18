@@ -1,0 +1,237 @@
+.partner-container {
+    background-color: #02020a;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Hero Section */
+.partner-hero {
+    position: relative;
+    padding: 140px 0 100px;
+    text-align: center;
+    background: #02020a;
+    overflow: hidden;
+}
+
+.hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(139, 44, 245, 0.2) 0%, rgba(139, 44, 245, 0.05) 40%, transparent 70%);
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.partner-badge {
+    background-color: #8b2cf5;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.hero-title {
+    font-size: clamp(36px, 6vw, 68px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-lead {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Intro Section */
+.partner-intro {
+    padding: 100px 6%;
+    background-color: #03030c;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.intro-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Partnership Types */
+.partnership-types {
+    padding: 100px 6%;
+}
+
+.section-label {
+    color: #8b2cf5;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+.type-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.type-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 50px;
+    border-radius: 32px;
+    transition: all 0.4s ease;
+}
+
+.type-card:hover {
+    background: rgba(139, 44, 245, 0.05);
+    border-color: rgba(139, 44, 245, 0.3);
+    transform: translateY(-10px);
+}
+
+.type-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.type-desc {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.benefits-list, .ideal-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.list-header {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #8b2cf5;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.benefits-list li, .ideal-list li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.benefits-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #8b2cf5;
+    font-weight: bold;
+}
+
+.ideal-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8b2cf5;
+    font-weight: bold;
+}
+
+/* Testimonials Section */
+.partner-testimonials {
+    padding: 100px 6%;
+    background-color: #03030c;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: rgba(139, 44, 245, 0.2);
+    transform: translateY(-5px);
+}
+
+.quote-icon {
+    font-size: 30px;
+    color: rgba(139, 44, 245, 0.3);
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #8b2cf5;
+}
+
+@media (max-width: 991px) {
+    .type-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    .intro-title {
+        font-size: 32px;
+    }
+}

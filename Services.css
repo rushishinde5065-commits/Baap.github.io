@@ -1,0 +1,246 @@
+.services-container {
+    background-color: #02020a;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    padding-bottom: 100px;
+}
+
+/* Hero Section */
+.services-hero {
+    position: relative;
+    padding: 140px 0 100px;
+    text-align: center;
+    background: #02020a;
+    overflow: hidden;
+}
+
+.hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(139, 44, 245, 0.2) 0%, rgba(139, 44, 245, 0.05) 40%, transparent 70%);
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-badge {
+    background-color: #8b2cf5;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.hero-title {
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.hero-lead {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Grid */
+.services-grid-section {
+    padding: 80px 6%;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 50px 40px;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(139, 44, 245, 0.1), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(139, 44, 245, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(139, 44, 245, 0.1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #8b2cf5;
+}
+
+.service-card h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #8b2cf5;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    transition: gap 0.3s ease;
+}
+
+.read-more-btn:hover {
+    gap: 15px;
+    color: #a855f7;
+}
+
+/* Global Capability Section */
+.capability-section {
+    padding: 100px 6%;
+    background: linear-gradient(180deg, #02020a 0%, #050515 100%);
+}
+
+.capability-card {
+    background: rgba(139, 44, 245, 0.03);
+    border: 1px solid rgba(139, 44, 245, 0.1);
+    padding: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.capability-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.capability-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Call to Action */
+.services-cta {
+    padding: 120px 6% 60px;
+    text-align: center;
+}
+
+.cta-box {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cta-box h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.cta-box p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+}
+
+.strategy-btn {
+    background: #8b2cf5;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(139, 44, 245, 0.3);
+}
+
+.strategy-btn:hover {
+    transform: translateY(-5px);
+    background: #7c24dc;
+    box-shadow: 0 15px 40px rgba(139, 44, 245, 0.4);
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .capability-card {
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 38px;
+    }
+    .cta-box h2 {
+        font-size: 32px;
+    }
+}

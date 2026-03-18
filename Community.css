@@ -1,0 +1,212 @@
+.community-container {
+    background-color: #02020a;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    padding-bottom: 80px;
+}
+
+/* Hero Section */
+.community-hero {
+    position: relative;
+    padding: 140px 0 100px;
+    text-align: center;
+    background: #02020a;
+    overflow: hidden;
+}
+
+.hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(139, 44, 245, 0.2) 0%, rgba(139, 44, 245, 0.05) 40%, transparent 70%);
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.community-badge {
+    background-color: #8b2cf5;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.hero-title {
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.hero-lead {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Gaon Gotha Section */
+.gaon-gotha-section {
+    padding: 100px 6%;
+    background-color: #03030c;
+}
+
+.gaon-gotha-card {
+    background: linear-gradient(145deg, rgba(139, 44, 245, 0.05), rgba(0, 0, 0, 0.3));
+    border: 1px solid rgba(139, 44, 245, 0.2);
+    padding: 60px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.gaon-gotha-card h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.gaon-gotha-card p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Clubs Grid */
+.clubs-section {
+    padding: 100px 6%;
+}
+
+.clubs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.club-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.club-card:hover {
+    background: rgba(139, 44, 245, 0.05);
+    border-color: rgba(139, 44, 245, 0.3);
+    transform: translateY(-5px);
+}
+
+.club-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #8b2cf5;
+}
+
+.club-card p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+
+/* Business Area Section */
+.business-section {
+    padding: 100px 6%;
+    background-color: #03030c;
+}
+
+.business-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.business-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 24px;
+    transition: all 0.3s ease;
+}
+
+.business-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(139, 44, 245, 0.2);
+}
+
+.business-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.business-card p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 100px 6%;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.impact-card {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.impact-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #8b2cf5;
+}
+
+.impact-card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .gaon-gotha-card {
+        padding: 40px 20px;
+    }
+    .hero-title {
+        font-size: 36px;
+    }
+}

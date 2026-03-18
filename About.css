@@ -1,0 +1,255 @@
+.about-container {
+    background-color: #02020a;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    padding: 120px 0;
+    text-align: center;
+    background: #02020a;
+    overflow: hidden;
+}
+
+.hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(139, 44, 245, 0.2) 0%, rgba(139, 44, 245, 0.05) 40%, transparent 70%);
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.company-badge {
+    background-color: #8b2cf5;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.hero-title {
+    font-size: clamp(32px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-lead {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+/* Common Section Styling */
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Vision Section */
+.vision-section {
+    position: relative;
+    padding: 100px 0;
+    background-color: #030310;
+}
+
+.vision-bg-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: clamp(100px, 15vw, 240px);
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.02);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.vision-content {
+    position: relative;
+    z-index: 1;
+}
+
+.vision-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.vision-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+.vision-quote {
+    font-size: 20px !important;
+    font-weight: 600;
+    color: #8b2cf5 !important;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.founder-info {
+    margin-top: 40px;
+}
+
+.founder-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.founder-title {
+    color: #8b2cf5;
+    font-weight: 500;
+}
+
+.vision-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    background: rgba(139, 44, 245, 0.05);
+    border-color: rgba(139, 44, 245, 0.2);
+}
+
+.stat-card h3 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #8b2cf5;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 100px 0;
+    background-color: #02020a;
+}
+
+.approach-card, .direction-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 24px;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #8b2cf5;
+}
+
+.focus-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.focus-list li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.focus-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #8b2cf5;
+    font-weight: bold;
+}
+
+/* Why Choose Section */
+.why-choose-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #02020a 0%, #050515 100%);
+}
+
+.choose-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.choose-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(139, 44, 245, 0.3);
+    transform: translateY(-5px);
+}
+
+.choose-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.choose-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.choose-card p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+    .vision-stats {
+        margin-top: 50px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+}
